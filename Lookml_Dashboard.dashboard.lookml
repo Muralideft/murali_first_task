@@ -1,4 +1,4 @@
-- dashboard: lookml_dashboard
+- dashboard: First_Lookml_Dashboard
   title: Lookml Dashboard
   layout: tile
   tile_size: 100
