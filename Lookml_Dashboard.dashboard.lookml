@@ -28,5 +28,3 @@
       - "#B2A898"
       - "#49AC52"
       color_palette : Default
-
-
