@@ -8,14 +8,14 @@
   elements:
     - name: Total_Orders
       label: Total Orders
-      model : thelook
-      explore: order_items
-      type: single_value
-      fields :
-      - order_items.order_count
+      model : murali_first_task
+      explore: order_item
+      type: table
+      fields: [order_item.count]
+      limit: 500
+      query_timezone: Asia/Kolkata
       sorts :
       - order_items.order_count desc
-      limit : 50
       font_size : medium
       colors:
       - "#64518A"
@@ -28,6 +28,5 @@
       - "#B2A898"
       - "#49AC52"
       color_palette : Default
-
 
 
