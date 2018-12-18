@@ -55,7 +55,7 @@
       title: Untitled Visualization
       model: murali_first_task
       explore: order
-      type: looker_column
+      type: looker_bar
       fields: [order.customer_id, order.id, order.order_number, order.total_amount, order.count]
       sorts: [order.id desc]
       limit: 50
