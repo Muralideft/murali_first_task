@@ -28,7 +28,7 @@
       - "#B2A898"
       - "#49AC52"
       color_palette : Default
-  elements:
+
     - name: Total_Orders2
       label: Total Orders2
       model : murali_first_task
