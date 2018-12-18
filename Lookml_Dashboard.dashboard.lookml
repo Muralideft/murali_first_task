@@ -11,7 +11,7 @@
       model : murali_first_task
       explore: order_item
       type: table
-      fields: [order_item.count]
+      fields:  [order.customer_id, order.id, order.total_amount, order.order_number, order.count]
       limit: 500
       query_timezone: Asia/Kolkata
       sorts :
