@@ -31,7 +31,6 @@
 
     - name: Total_Orders2
       label: Total Orders2
-      view_name: Test
       model : murali_first_task
       explore: order_item
       type: table
