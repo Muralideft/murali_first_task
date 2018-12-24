@@ -55,3 +55,11 @@ explore: product {
 }
 
 explore: supplier {}
+explore: Test {
+  view_name: order_item
+  join: order {
+    type: left_outer
+    sql_on: ${order_item.order_id} = ${order.id} ;;
+    relationship: many_to_one
+  }
+}
