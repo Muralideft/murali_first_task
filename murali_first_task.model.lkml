@@ -10,7 +10,6 @@ datagroup: murali_first_task_default_datagroup {
 
 persist_with: murali_first_task_default_datagroup
 
-explore: customer {}
 explore: Test {
   view_name: order_item
   group_label: "Test_Keywords"
