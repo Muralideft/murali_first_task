@@ -58,6 +58,7 @@ explore: supplier {}
 explore: Test {
   view_name: order_item
   view_label: "Keywords"
+  group_label: "Test_Keywords"
   join: order {
     type: left_outer
     sql_on: ${order_item.order_id} = ${order.id} ;;
