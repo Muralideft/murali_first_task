@@ -5,7 +5,7 @@ include: "*.view"
 include: "*.dashboard.lookml"
 datagroup: murali_first_task_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "10 minutes"
 }
 
 persist_with: murali_first_task_default_datagroup
@@ -19,6 +19,7 @@ explore: Test {
     sql_on: ${order_item.order_id} = ${order.id} ;;
     relationship: many_to_one
   }
+
 }
 
 explore: order {
