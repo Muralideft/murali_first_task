@@ -2,10 +2,10 @@ connection: "deftdb"
 
 # include all the views
 include: "*.view"
-include: "*.dashboard.lookml"
+
 datagroup: murali_first_task_default_datagroup {
-   sql_trigger: SELECT MAX(order.id) FROM order;;
-  max_cache_age: "10 minutes"
+  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "1 hour"
 }
 
 persist_with: murali_first_task_default_datagroup
