@@ -1,12 +1,12 @@
 view: customer {
-  derived_table: {
-    sql:
-      SELECT *
-      FROM  dbo.Customer
+#  derived_table: {
+ #   sql:
+  #    SELECT *
+   #   FROM  dbo.Customer
 
-    sql_trigger_value: SELECT MAX(id) ;;
-  }
- # sql_table_name: dbo.Customer ;;
+    #sql_trigger_value: SELECT MAX(id) ;;
+  #}
+ sql_table_name: dbo.Customer ;;
 
   dimension: id {
     primary_key: yes
