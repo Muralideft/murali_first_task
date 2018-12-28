@@ -3,13 +3,9 @@ view: Customer_PDT {
     datagroup_trigger: murali_first_task_default_datagroup
     sql_create:
       CREATE OR REPLACE MODEL order111
-      OPTIONS(model_type='logistic_reg'
-        , labels=['will_purchase_in_future']
-        , min_rel_progress = 0.005
-        , max_iterations = 40
-        ) AS
-      SELECT
+       AS
+      (SELECT
          *
-      FROM order;;
+      FROM order);;
   }
 }
