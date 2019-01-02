@@ -44,4 +44,18 @@ view: order {
     type: count
     drill_fields: [id, customer.id, customer.first_name, customer.last_name, order_item.count]
   }
+
+
+  parameter: Orderid_filter {
+    type: number
+    allowed_value: {
+      label: "Order_Id"
+      value: "id"
+    }
+
+  }
+
+  dimension: Test {
+    sql: {% parameter Orderid_filter %} ${id};;
+  }
 }
