@@ -15,7 +15,7 @@ view: order {
   dimension: id {
     primary_key: yes
     type: number
-    sql: ${TABLE}.{% parameter Orderid_filter %} ${Orderid_filter};;
+    sql: ${TABLE}.{% parameter Orderid_filter %} ${customer_id} ;;
 
   }
 
