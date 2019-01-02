@@ -1,7 +1,21 @@
 view: order {
   sql_table_name: dbo."Order" ;;
-  parameter: field_name {type: number
-    required_fields: [order.id]}
+
+  parameter: Order_id {
+    type: number
+    allowed_value: {
+      label: "ORDER ID"
+      value: "id"
+    }
+
+  }
+  measure: OrderId {
+    type: sum
+    sql: ${TABLE}.{% parameter Order_id %} ;;
+    value_format_name: id
+  }
+
+
   dimension: id {
     primary_key: yes
     type: number
