@@ -46,16 +46,21 @@ view: order {
   }
 
 
-  parameter: Orderid_filter {
+  measure: category_count {
     type: number
-    allowed_value: {
-      label: "Order_Id"
-      value: "8"
-    }
-
+    sql:
+    CASE
+      WHEN ${id} = {% parameter category_to_count %}
+      THEN ${id}
+      ELSE 0
+    END
+  ;;
   }
 
-  dimension: Test {
-    sql: {% parameter Orderid_filter %} ${id};;
+  filter: category_to_count {
+    type: string
   }
+
+
+
 }
