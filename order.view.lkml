@@ -1,15 +1,6 @@
 view: order {
   sql_table_name: dbo."Order" ;;
 
-  parameter: Orderid_filter {
-    type: number
-    allowed_value: {
-      label: "Order_Id"
-      value: "id"
-    }
-
-  }
-
 
 
   dimension: id {
