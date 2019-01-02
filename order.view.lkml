@@ -52,7 +52,7 @@ view: order {
     CASE
       WHEN ${id} = {% parameter category_to_count %}
       THEN ${id}
-      ELSE 0
+
     END
   ;;
   }
