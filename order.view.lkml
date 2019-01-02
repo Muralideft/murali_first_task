@@ -10,7 +10,7 @@ view: order {
 
   }
   measure: OrderId {
-    type: sum
+    type: number
     sql: ${TABLE}.{% parameter Order_id %} ;;
     value_format_name: id
   }
