@@ -1,6 +1,7 @@
 view: order {
   sql_table_name: dbo."Order" ;;
-
+  parameter: field_name {type: number
+    required_fields: [order.id]}
   dimension: id {
     primary_key: yes
     type: number

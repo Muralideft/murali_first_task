@@ -22,6 +22,7 @@ explore: Test {
 
 }
 
+
 explore: order {
   join: customer {
     type: left_outer
