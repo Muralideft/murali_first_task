@@ -1,10 +1,10 @@
 view: order {
   sql_table_name: dbo."Order" ;;
 
-  parameter: Order_id {
+  parameter: Orderid_filter {
     type: number
     allowed_value: {
-      label: "8"
+      label: "Order_Id"
       value: "8"
     }
 
@@ -15,7 +15,8 @@ view: order {
   dimension: id {
     primary_key: yes
     type: number
-    sql: ${TABLE}.{% parameter Order_id %} ;;
+    sql: ${TABLE}.{% parameter Orderid_filter %} ${Orderid_filter};;
+
   }
 
   dimension: customer_id {
