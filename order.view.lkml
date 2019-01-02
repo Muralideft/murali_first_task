@@ -5,7 +5,7 @@ view: order {
     type: number
     allowed_value: {
       label: "Order_Id"
-      value: "8"
+      value: "id"
     }
 
   }
