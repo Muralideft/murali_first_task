@@ -9,16 +9,13 @@ view: order {
     }
 
   }
-  measure: OrderId {
-    type: number
-    sql: ${TABLE}.{% parameter Order_id %} ;;
-  }
+
 
 
   dimension: id {
     primary_key: yes
     type: number
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}.{% parameter Order_id %} ;;
   }
 
   dimension: customer_id {
