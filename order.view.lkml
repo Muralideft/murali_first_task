@@ -4,7 +4,7 @@ view: order {
   parameter: Order_id {
     type: number
     allowed_value: {
-      label: "ORDER ID"
+      label: "8"
       value: "8"
     }
 
@@ -12,7 +12,6 @@ view: order {
   measure: OrderId {
     type: number
     sql: ${TABLE}.{% parameter Order_id %} ;;
-    value_format_name: id
   }
 
 
