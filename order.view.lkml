@@ -7,11 +7,11 @@ parameter:  Id{default_value:"8"}
     drill_fields: [order_year]
     html:
     <a href="#drillmenu" target="_self">
-      {% if value > 278 %}
+      {% if value > 0 'AND'  value < 153 %}
         <font color="#42a338 ">{{ rendered_value }}</font>
-      {% elsif value > 153  %}
+      {% elsif value > 153 'AND' value < 271  %}
         <font color="#0000ff">{{ rendered_value }}</font>
-      {% elsif value > 0 %}
+      {% elsif value > 271 'AND' value < 410 %}
         <font color="#FF0000">{{ rendered_value }}</font>
       {% endif %}
     </a>;;

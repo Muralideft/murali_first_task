@@ -23,6 +23,8 @@ explore: Test {
 }
 
 
+explore: customer {}
+
 explore: order {
   join: customer {
     type: left_outer
