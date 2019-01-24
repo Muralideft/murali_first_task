@@ -10,20 +10,13 @@ datagroup: murali_first_task_default_datagroup {
 
 persist_with: murali_first_task_default_datagroup
 
-explore: Test {
-  view_name: order_item
-  group_label: "Test_Keywords"
-  view_label: "Keywords"
+explore: customer {
   join: order {
     type: left_outer
-    sql_on: ${order_item.order_id} = ${order.id} ;;
+    sql_on: ${customer.id} = ${order.customer_id} ;;
     relationship: many_to_one
   }
-
 }
-
-
-explore: customer {}
 
 explore: order {
   join: customer {
